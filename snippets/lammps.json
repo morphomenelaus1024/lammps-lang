@@ -1,0 +1,152 @@
+{
+    "variable": {
+        "prefix": "variable",
+        "body": [
+            "variable ${1:name} ${2:style} ${3:args}"
+        ]
+    },
+    "create_box": {
+        "prefix": "create_box",
+        "body": [
+            "create_box ${1:N} ${2:region-ID}"
+        ]
+    },
+    "lattice": {
+        "prefix": "lattice",
+        "body": [
+            "lattice ${1:style} ${2:scale}"
+        ]
+    },
+    "region": {
+        "prefix": "region",
+        "body": [
+            "region ${1:ID} ${2:args}"
+        ]
+    },
+    "balance": {
+        "prefix": "balance",
+        "body": [
+            "balance ${1:thresh} ${2:style}"
+        ]
+    },
+    "create_atoms": {
+        "prefix": "create_atoms",
+        "body": [
+            "create_atoms ${1:type} ${2:style} ${3:args}"
+        ]
+    },
+    "delete_atoms": {
+        "prefix": "delete_atoms",
+        "body": [
+            "delete_atoms ${1:style} ${2:args}"
+        ]
+    },
+    "group": {
+        "prefix": "group",
+        "body": [
+            "group ${1:ID} ${2:style} ${3:args}"
+        ]
+    },
+    "read_dump": {
+        "prefix": "read_dump",
+        "body": [
+            "read_dump ${1:file} ${2:Nstep} ${3:fields...}"
+        ]
+    },
+    "set": {
+        "prefix": "set",
+        "body": [
+            "set ${1:style} ${2:ID}"
+        ]
+    },
+    "velocity": {
+        "prefix": "velocity",
+        "body": [
+            "velocity ${1:group-ID} ${2:style} ${args}"
+        ]
+    },
+    "bond_write": {
+        "prefix": "bond_write",
+        "body": [
+            "bond_write ${1:btype} ${2:N} ${3:inner} ${4:outer} ${5:file}"
+        ]
+    },
+    "pair_write": {
+        "prefix": "pair_write",
+        "body": [
+            "pair_write ${1:itype} ${2:jtype} ${3:N} ${4:style} ${5:inner} ${6:outer} ${7:file}"
+        ]
+    },
+    "neighbor": {
+        "prefix": "neighbor",
+        "body": [
+            "neighbor ${1:skin} ${2:style}"
+        ]
+    },
+    "compute": {
+        "prefix": "compute",
+        "body": [
+            "compute ${1:ID} ${2:group-ID} ${3:style}"
+        ]
+    },
+    "fix": {
+        "prefix": "fix",
+        "body": [
+            "fix ${1:ID} ${2:group-ID} ${3:style}"
+        ]
+    },
+    "restart": {
+        "prefix": "restart",
+        "body": [
+            "restart ${1:N} ${2:root}"
+        ]
+    },
+    "dump": {
+        "prefix": "dump",
+        "body": [
+            "dump ${1:ID} ${2:group-ID} ${3:style} ${4:N} ${5:file}"
+        ]
+    },
+    "write_dump": {
+        "prefix": "write_dump",
+        "body": [
+            "write_dump ${1:group-ID} ${2:style} ${3:file}"
+        ]
+    },
+    "minimize": {
+        "prefix": "minimize",
+        "body": [
+            "minimize ${1:etol} ${2:ftol} ${3:maxiter} ${4:maxeval}"
+        ]
+    },
+    "if/then": {
+        "prefix": "if",
+        "body": [
+            "if \"${1:boolean}\" then &",
+            "\t\"${2:command(s)}\""
+        ]
+    },
+    "if/then/else": {
+        "prefix": "if/else",
+        "body": [
+            "if \"${1:boolean}\" then &",
+            "\t\"${2:command(s)}\" &",
+            "else &",
+            "\t\"${3:command(s)}\""
+        ]
+    },
+    "else": {
+        "prefix": "else",
+        "body": [
+            "else &",
+            "\t\"${1:command(s)}\""
+        ]
+    },
+    "elif": {
+        "prefix": "elif",
+        "body": [
+            "elif &",
+            "\t\"${1:command(s)}\""
+        ]
+    }
+}
