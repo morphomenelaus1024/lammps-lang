@@ -1,0 +1,25 @@
+{
+    "name": "lammps-lang",
+    "displayName": "lammps-lang",
+    "description": "language extentsion for lammps script",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.31.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "lammps",
+            "aliases": ["lammps", "lammps"],
+            "extensions": ["lmp"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "lammps",
+            "scopeName": "source.lmp",
+            "path": "./syntaxes/lammps.tmLanguage.json"
+        }]
+    }
+}
