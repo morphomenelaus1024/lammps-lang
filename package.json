@@ -7,19 +7,24 @@
         "vscode": "^1.31.0"
     },
     "categories": [
-        "Programming Languages"
+        "Programming Languages",
+        "Snippets"
     ],
     "contributes": {
         "languages": [{
             "id": "lammps",
-            "aliases": ["lammps", "lammps"],
-            "extensions": ["lmp"],
+            "aliases": ["lammps", "lmp"],
+            "extensions": ["lammps", "lmp"],
             "configuration": "./language-configuration.json"
         }],
         "grammars": [{
             "language": "lammps",
             "scopeName": "source.lmp",
             "path": "./syntaxes/lammps.tmLanguage.json"
+        }],
+        "snippets": [{
+            "language": "lammps",
+            "path": "./snippets/snippets.lammps.json"
         }]
     }
 }
