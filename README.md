@@ -1,4 +1,4 @@
-# lammps-lang README
+# lammps-lang
 
 The language extension for LAMMPS scripts. Still in test.
 

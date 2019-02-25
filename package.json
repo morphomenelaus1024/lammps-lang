@@ -1,5 +1,6 @@
 {
     "name": "lammps-lang",
+    "publisher": "morphomenelaus",
     "displayName": "lammps-lang",
     "description": "language extentsion for lammps script",
     "version": "0.0.1",
